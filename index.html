@@ -14,21 +14,6 @@
     })();
   </script>
 
-<!-- 复制这个JavaScript到网页中 -->
-<script>
-  fetch('gs_data.json')
-      .then(response => response.json())
-      .then(data => {
-          document.getElementById('total_citations').innerText = `${data.citedby}`;
-          const paperElements = document.querySelectorAll('.paper_citations');
-          paperElements.forEach(element => {
-              const paperId = element.getAttribute('paper-id');
-              const paperCitations = data.publications[paperId].num_citations;
-              element.innerText = `${paperCitations}`;
-          });
-      });
-</script>
-
   <!-- <script language="javascript"> document.oncontextmenu=function(){return false} </script> -->
   <style>
     body {
@@ -39,24 +24,6 @@
 <font face="comic sans ms">
 
   <BODY bgColor="#ffffff" link="#0000ff" vlink="#006600">
-    <!-- <table width="80%" border="0" align="center">
-      <tr>
-        <td width="40%">
-          <div id="header" style="float:left">
-            <h2>Yi Haicheng (易海成)</h2>
-            <p> Ph.D. in Computer Science</p><br>
-            University of Chinese Academy of Sciences,<br>
-            Beijing 100049, China.
-            <p><b>Email</b>: <a href="mailto:yihaicheng17@mails.ucas.ac.cn">yihaicheng17 (at) mails.ucas.ac.cn</a></p>
-          </div>
-        </td>
-        <td width="40%">
-          <div id="photo" style="float:right;">
-            <img src="HCY.jpg" alt="photo" style="width:170px;height:210px;">
-          </div>
-        </td>
-      </tr>
-    </table> -->
     
     <TABLE>
 
@@ -104,7 +71,7 @@
       <p>From Big Data to Big Mind, his reserch focuses on building data-driven, advanced artificial intelligence
       frameworks for solving cutting-edge issues in biology, medicine and healthcare, where he has contributed more
       than 30 papers in journals and conferences like IEEE JBHI, TKDE, iScience, IEEE Trans., Brief. Bioinform., 
-      and IEEE BIBM. These papers have been cited <a href="https://scholar.google.com/citations?user=A_eC8r0AAAAJ"><span id="total_citations"></span></a> times(Google Scholar)</a>.
+      and IEEE BIBM. These papers have been cited <a href="https://scholar.google.com/citations?user=A_eC8r0AAAAJ"> 1300 times (Google Scholar)</a>.
       Some work was reported by the official website of <a href="https://www.cas.cn/">the Chinese Academy of Sciences</a>.
     </p>
   </dl>
